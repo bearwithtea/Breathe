@@ -1,4 +1,4 @@
-import { Detail } from "@raycast/api";
+import { Detail, List } from "@raycast/api";
 import { motion } from "framer-motion";
 import './style.css';
 import React from "react";
@@ -7,19 +7,22 @@ export default function Main() {
   return (
     <>
       <Detail markdown="# Meditation" />
-      <Box />
+      <Meter />
     </>
   );
 }
 
-class MyHeader extends React.Component {
-  render() {
-    return (
-      <div>
-      <h1 style={{color: "red"}}>Hello Style!</h1>
-      <p>Add a little style!</p>
-      </div>
-    );
-  }
-}
+function Meter() {
+  const meterStyle = {
+    borderStyle: "solid",
+    borderWidth: "20%",
+    borderColor: "black",
+    borderRadius: "5%"
+  };
 
+  return (
+    <div style={meterStyle}>
+      
+    </div>
+  );
+}
