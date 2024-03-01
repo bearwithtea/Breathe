@@ -1,22 +1,22 @@
-import { ActionPanel, Icon, List, LocalStorage } from "@raycast/api";
-import { motion } from "framer-motion";
+import { Detail } from "@raycast/api";
+import ReactMarkdown from "react-markdown";
 
-interface Breathe {
-  title: String;
-}
 
-export default function Main() {
-  return {Title}
-}
 
-function Bar() {
+  const markdown =
+  `
+    |    |
+    |    |
+    |    |
+    |    |
+    |    |
+    |    |
+    |    |
+    |    |
+    |    |
+    |____|
+  `;
 
-}
-
-function Title() {
-  { title: "Breathe"};
-}
-
-function quote() {
-
+export default function () {
+  return <Detail markdown={markdown} />;
 }
