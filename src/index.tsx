@@ -1,28 +1,22 @@
-import { Detail, List } from "@raycast/api";
+import { ActionPanel, Icon, List, LocalStorage } from "@raycast/api";
 import { motion } from "framer-motion";
-import './style.css';
-import React from "react";
 
-export default function Main() {
-  return (
-    <>
-      <Detail markdown="# Meditation" />
-      <Meter />
-    </>
-  );
+interface Breathe {
+  title: String;
 }
 
-function Meter() {
-  const meterStyle = {
-    borderStyle: "solid",
-    borderWidth: "20%",
-    borderColor: "black",
-    borderRadius: "5%"
-  };
+export default function Main() {
+  return {Title}
+}
 
-  return (
-    <div style={meterStyle}>
-      
-    </div>
-  );
+function Bar() {
+
+}
+
+function Title() {
+  { title: "Breathe"};
+}
+
+function quote() {
+
 }
