@@ -2,7 +2,7 @@ import { Detail } from "@raycast/api";
 import ReactMarkdown from "react-markdown";
 
 
-export default function () {
+export default function () { //literally the whole thing, lol.
 
   const everything =
   ` 
